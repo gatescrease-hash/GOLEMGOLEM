@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#14141b">
+  <title>GOLEM GOLEM — Mines</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="hud">
+      <div class="totals">
+        <div class="tot"><span class="chip stone"></span><b id="stoneN">0</b> stone <small id="stoneRate">0/min</small></div>
+        <div class="tot"><span class="chip ore"></span><b id="oreN">0</b> ore <small id="oreRate">0/min</small></div>
+      </div>
+      <div class="milestone">
+        <div class="ms-text"><span id="msTitle"></span><small id="msDetail"></small></div>
+        <div class="bar"><i id="msBar"></i></div>
+      </div>
+    </header>
+
+    <section id="world"><canvas id="canvas"></canvas><div id="toast" hidden></div></section>
+
+    <section id="strip"><div id="tabs"></div><div id="status"></div></section>
+
+    <section id="program">
+      <div id="progHead">
+        <div id="meter"></div>
+        <div id="lineBtns">
+          <button id="btnUp" aria-label="Move line up">▲</button>
+          <button id="btnDown" aria-label="Move line down">▼</button>
+          <button id="btnDel" aria-label="Delete line">✕</button>
+        </div>
+      </div>
+      <div id="lines"></div>
+    </section>
+
+    <section id="palette"></section>
+
+    <footer id="controls">
+      <div class="left"><button id="btnMenu" aria-label="Menu">⚙</button><span id="clock">0:00</span></div>
+      <div class="right">
+        <button id="btnReset">Reset</button>
+        <button id="btnSpeed">1×</button>
+        <button id="btnStep">Step</button>
+        <button id="btnRun" class="primary">Run</button>
+      </div>
+    </footer>
+
+    <div id="modal" hidden><div class="sheet" id="sheet"></div></div>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
