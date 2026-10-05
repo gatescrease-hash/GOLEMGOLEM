@@ -15,6 +15,10 @@ npm test             # headless sim / program / progress tests (Node 20+)
 
 Best viewed in a portrait window (designed at 390×844).
 
+Hosted build: https://gatescrease-hash.github.io/GOLEMGOLEM/ — redeployed by
+`.github/workflows/pages.yml` on every push to `main` (tests must pass). Needs
+Settings → Pages → Source set to "GitHub Actions" once.
+
 ## Layout
 
 | File | Responsibility |
